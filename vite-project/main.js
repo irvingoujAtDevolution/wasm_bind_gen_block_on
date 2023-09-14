@@ -12,7 +12,7 @@ async function await_for(){
 globalThis.await_for = await_for;
 
 
-init("./public/wasm_bind_gen_block_on_bg.wasm").then((res)=>{
+init("./wasm_bind_gen_block_on_bg.wasm").then((res)=>{
   console.log("init sucessfult",res)
   res.test()
 })
